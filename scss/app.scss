@@ -1,17 +1,4 @@
-// Fuentes
-$principal-font                : 'Raleway', sans-serif;
-// Colores
-$principal                     : #33C3F0;
-$secundario                    : #741D51;
-$terciario                     : #E44E52;
-
-$bg-content-carrito-compras    : #F1F1F1;
-$bg-btn-carrito-compras        : $principal;
-$color-btn-carrito-compras     : white;
-// Dimensiones
-$max-width-content             : 1100px;
-$max-width-hide-content        : 500px;
-$max-width-img-carrito-compras : 150px;
+@import 'variables';
 
 body {
    font-family: $principal-font;
