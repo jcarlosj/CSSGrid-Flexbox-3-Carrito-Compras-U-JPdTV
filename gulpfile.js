@@ -7,7 +7,8 @@ gulp .task( 'sass', () => {
    gulp .src( './scss/app.scss' )
       .pipe(
          autoprefixer({
-
+            browsers: [ 'last 2 versions' ],
+            cascade: false
          })
       )
       .pipe(
