@@ -19,3 +19,8 @@ gulp .task( 'sass', () => {
          gulp .dest( 'css' )
       );
 });
+
+/* Task: watch */
+gulp .task( 'watch', [ 'sass' ], () => {
+   gulp .watch( [ './scss/*.scss' ], [ 'sass' ] );
+});
