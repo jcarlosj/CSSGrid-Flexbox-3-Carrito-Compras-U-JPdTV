@@ -1,5 +1,51 @@
-body {
-   background-color: pink;
+// Colores
+$bg-content-carrito-compras    : #F1F1F1;
+$bg-btn-carrito-compras        : #33C3F0;
+$color-btn-carrito-compras     : white;
+// Dimensiones
+$max-width-content             : 1100px;
+$max-width-hide-content        : 500px;
+$max-width-img-carrito-compras : 150px;
+
+.contenedor {
+   margin: 0 auto;
+   max-width: $max-width-content;
+}
+.contenido-oculto {
+   display: none;
+}
+
+header {
+   align-items: center;
    display: flex;
-   flex-direction: column;
+   justify-content: space-between;
+
+   .logo {
+      padding: 1.6rem 0;
+   }
+   .carrito-compras {
+      position: relative;
+
+      &:hover .contenido-oculto {
+         background-color: $bg-content-carrito-compras;
+         display: block;
+         max-width: $max-width-hide-content;
+         padding: 1rem;
+         position: absolute;
+         right: 0;
+
+         img {
+            max-width: $max-width-img-carrito-compras;
+         }
+         .boton {
+            background-color: $bg-btn-carrito-compras;
+            color: $color-btn-carrito-compras;
+            display: block;
+            margin-top: 1rem;
+            padding: .5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+         }
+      }
+   }
 }
