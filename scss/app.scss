@@ -73,7 +73,10 @@ header {
       }
       form {
          position: relative;
-         width: 40%;
+
+         @include mqTablet() {
+            width: 40%;
+         }
 
          input {
             margin: 0;
