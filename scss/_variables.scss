@@ -5,9 +5,11 @@ $principal                     : #33C3F0;
 $secundario                    : #741D51;
 $terciario                     : #E44E52;
 
+$blanco                        : white;
+
 $bg-content-carrito-compras    : #F1F1F1;
 $bg-btn-carrito-compras        : $principal;
-$color-btn-carrito-compras     : white;
+$color-btn-carrito-compras     : $blanco;
 // Dimensiones
 $max-width-content             : 1100px;
 $max-width-hide-content        : 500px;
