@@ -21,6 +21,12 @@
    background-repeat: no-repeat;
 }
 
+// Personalización degradado
+@mixin gradient( $initialColor, $finalColor ) {
+   background: linear-gradient( to right, $initialColor 0%, $finalColor 100% );
+   /* 'linear-gradient' solo funciona con la propiedad 'background' */
+}
+
 /* Media Queries */
 @mixin mqPhone {
    @media only screen and ( min-width: #{ $phone } ) {

@@ -51,7 +51,7 @@ header {
         text-decoration: none;
         /* Mixin */ }
 
-/* Main Image Site */
+/* Section 'hero': Main Image Site */
 .hero {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -97,3 +97,64 @@ header {
         background-image: url("../img/lupa.png");
         background-position: center center;
         background-repeat: no-repeat; }
+
+/* Section 'barra': Content Bar */
+.barra {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 15rem;
+  background: linear-gradient(to right, #741D51 0%, #E44E52 100%);
+  /* 'linear-gradient' solo funciona con la propiedad 'background' */ }
+  @media only screen and (min-width: 768px) {
+    .barra {
+      min-height: 7rem; } }
+  .barra .iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media only screen and (min-width: 1024px) {
+      .barra .iconos {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    .barra .iconos .icono {
+      background-position: 4% center !important;
+      background-size: 2.6rem;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .barra .iconos .icono {
+          background-position: 20% center !important; } }
+      @media only screen and (min-width: 1024px) {
+        .barra .iconos .icono {
+          background-position: left center !important; } }
+      .barra .iconos .icono.icono1 {
+        background-image: url("../img/icono1.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-position: left center */ }
+      .barra .iconos .icono.icono2 {
+        background-image: url("../img/icono2.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-position: left center */ }
+      .barra .iconos .icono.icono3 {
+        background-image: url("../img/icono3.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-position: left center */ }
