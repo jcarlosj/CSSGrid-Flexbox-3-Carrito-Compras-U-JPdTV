@@ -50,30 +50,20 @@ header {
         text-decoration: none;
         /* Mixin */ }
 
-input[type='submit'] {
-  background-color: #741D51;
-  color: white;
-  display: block;
-  margin-top: 1rem;
-  padding: .5rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  /* Mixin */ }
-
 /* Main Image Site */
 .hero {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../img/hero.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 24rem; }
+  min-height: 24rem;
+  background-image: url("../img/hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat; }
   .hero .contenido-hero {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -90,8 +80,17 @@ input[type='submit'] {
         margin: 0;
         padding: 0; }
       .hero .contenido-hero form input[type='text'] {
+        height: 3rem;
         width: 100%; }
       .hero .contenido-hero form input[type='submit'] {
+        border: none;
+        cursor: pointer;
+        height: 3rem;
         position: absolute;
         right: 0;
-        top: 0; }
+        text-indent: -99999px;
+        top: 0;
+        width: 3rem;
+        background-image: url("../img/lupa.png");
+        background-position: center center;
+        background-repeat: no-repeat; }

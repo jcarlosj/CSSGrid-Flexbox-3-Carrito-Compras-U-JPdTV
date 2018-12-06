@@ -1,3 +1,4 @@
+// Personalización de Botones
 @mixin boton( $bgColor, $fontColor ) {
    background-color: $bgColor;
    color: $fontColor;
@@ -8,6 +9,14 @@
    text-decoration: none;
 }
 
+// Personalización de propiedad 'box-sizing'
 @mixin box-sizing( $box-model ) {
    box-sizing: $box-model;
+}
+
+// Personalización imagen de fondo
+@mixin background-image( $image ) {
+   background-image: url( $image );
+   background-position: center center;
+   background-repeat: no-repeat;
 }
