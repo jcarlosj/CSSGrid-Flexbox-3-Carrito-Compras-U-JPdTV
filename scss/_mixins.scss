@@ -1,0 +1,9 @@
+@mixin boton() {
+   background-color: $principal;
+   color: $color-btn-carrito-compras;
+   display: block;
+   margin-top: 1rem;
+   padding: .5rem 1rem;
+   text-align: center;
+   text-decoration: none;
+}

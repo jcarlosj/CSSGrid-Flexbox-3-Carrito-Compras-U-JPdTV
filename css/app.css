@@ -38,4 +38,15 @@ header {
         margin-top: 1rem;
         padding: .5rem 1rem;
         text-align: center;
-        text-decoration: none; }
+        text-decoration: none;
+        /* Mixin */ }
+
+input[type='submit'] {
+  background-color: #33C3F0;
+  color: white;
+  display: block;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  /* Mixin */ }

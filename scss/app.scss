@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 body {
    font-family: $principal-font;
@@ -35,14 +36,12 @@ header {
             max-width: $max-width-img-carrito-compras;
          }
          .boton {
-            background-color: $bg-btn-carrito-compras;
-            color: $color-btn-carrito-compras;
-            display: block;
-            margin-top: 1rem;
-            padding: .5rem 1rem;
-            text-align: center;
-            text-decoration: none;
+            @include boton();    /* Mixin */
          }
       }
    }
+}
+
+input[type='submit'] {
+   @include boton();    /* Mixin */
 }
