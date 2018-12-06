@@ -36,12 +36,12 @@ header {
             max-width: $max-width-img-carrito-compras;
          }
          .boton {
-            @include boton();    /* Mixin */
+            @include boton( $principal, $color-btn-carrito-compras );    /* Mixin */
          }
       }
    }
 }
 
 input[type='submit'] {
-   @include boton();    /* Mixin */
+   @include boton( $secundario, $color-btn-carrito-compras );    /* Mixin */
 }
