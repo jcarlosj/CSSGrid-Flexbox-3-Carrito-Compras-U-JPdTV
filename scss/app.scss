@@ -140,10 +140,66 @@ header {
             @include background-image( '../img/icono2.png' );
             /* background-position: left center */
          }
+
          &.icono3 {
             @include background-image( '../img/icono3.png' );
             /* background-position: left center */
          }
       }
+   }
+}
+
+/* Section 'cursos': Courses */
+.encabezado {
+   text-align: center;
+}
+.cursos {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+   /* Card: Course */
+   .curso {
+      border: 1px solid darken( $gris, 10 );
+      flex: 0 1 calc( 50% - 1rem );
+      margin-bottom: 1rem;
+
+      @include mqTablet() {
+         flex: 0 1 calc( 33% - 1rem );
+      }
+      @include mqDesktop() {
+         flex: 0 1 calc( 25% - 1rem );
+      }
+
+      .imagen-curso {
+         width: 100%;
+      }
+   }
+}
+
+/* Info Card: Course */
+.info-curso {
+   padding: .8rem;
+
+   h4 {
+      font-size: 1.2rem;
+      margin: 0;
+   }
+   .precio {
+      display: flex;
+      justify-content: space-between;
+
+      .regular {
+         color: $rojo;
+         text-decoration: line-through;
+      }
+      .oferta {
+         color: $verde;
+         font-size: 1.6rem;
+         font-weight: 500;
+      }
+   }
+   .boton {
+      @include boton( $secundario, $blanco );    /* Mixin */
    }
 }
