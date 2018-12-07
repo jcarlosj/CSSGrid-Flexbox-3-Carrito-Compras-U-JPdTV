@@ -203,3 +203,37 @@ header {
       @include boton( $secundario, $blanco );    /* Mixin */
    }
 }
+
+
+/* Site Footer */
+footer {
+   border-top: 1px solid darken( $gris, 10 );
+   margin-top: 1rem;
+   padding-top: 2rem;
+
+   .contenedor-footer {
+      display: flex;
+      flex-direction: column;
+
+      @include  mqPhone() {
+         flex-direction: row;
+      }
+   }
+}
+/* Menu */
+.menu {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   margin-bottom: 1.5rem;
+
+   @include mqTablet() {
+      flex: 0 1 calc( 30% - 1rem );
+   }
+
+   a {
+      color: $negro;
+      margin-bottom: .5rem;
+      text-decoration: none
+   }
+}
