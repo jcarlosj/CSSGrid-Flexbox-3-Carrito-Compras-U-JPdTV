@@ -237,3 +237,11 @@ footer {
       text-decoration: none
    }
 }
+
+.navegacion {
+   @extend .menu;
+
+   a {
+      color: $principal;
+   }
+}

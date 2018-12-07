@@ -243,7 +243,7 @@ footer {
         flex-direction: row; } }
 
 /* Menu */
-.menu {
+.menu, .navegacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,11 +256,14 @@ footer {
   flex-direction: column;
   margin-bottom: 1.5rem; }
   @media only screen and (min-width: 768px) {
-    .menu {
+    .menu, .navegacion {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 calc( 30% - 1rem);
       flex: 0 1 calc( 30% - 1rem); } }
-  .menu a {
+  .menu a, .navegacion a {
     color: black;
     margin-bottom: .5rem;
     text-decoration: none; }
+
+.navegacion a {
+  color: #33C3F0; }
