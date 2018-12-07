@@ -19,14 +19,8 @@ body {
 
 /* Site Header */
 header {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between; }
   header .logo {
     padding: 1.6rem 0; }
@@ -53,21 +47,15 @@ header {
 
 /* Section 'hero': Main Image Site */
 .hero {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-size: cover;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 24rem;
   background-image: url("../img/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat; }
   .hero .contenido-hero {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1; }
     .hero .contenido-hero h2 {
       font-size: 2.4rem;
@@ -100,41 +88,25 @@ header {
 
 /* Section 'barra': Content Bar */
 .barra {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 15rem;
   background: linear-gradient(to right, #741D51 0%, #E44E52 100%);
   /* 'linear-gradient' solo funciona con la propiedad 'background' */ }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .barra {
       min-height: 7rem; } }
   .barra .iconos {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column; }
     @media only screen and (min-width: 1024px) {
       .barra .iconos {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
         flex-direction: row; } }
     .barra .iconos .icono {
       background-position: 4% center !important;
       background-size: 2.6rem;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
       flex: 1;
       text-align: center; }
       @media only screen and (min-width: 768px) {
@@ -164,30 +136,19 @@ header {
   text-align: center; }
 
 .cursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   /* Card: Course */ }
   .cursos .curso {
     border: 1px solid #d9d9d9;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 calc( 50% - 1rem);
     flex: 0 1 calc( 50% - 1rem);
     margin-bottom: 1rem; }
     @media only screen and (min-width: 768px) {
       .cursos .curso {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc( 33% - 1rem);
         flex: 0 1 calc( 33% - 1rem); } }
     @media only screen and (min-width: 1024px) {
       .cursos .curso {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc( 25% - 1rem);
         flex: 0 1 calc( 25% - 1rem); } }
     .cursos .curso .imagen-curso {
       width: 100%; }
@@ -199,11 +160,7 @@ header {
     font-size: 1.2rem;
     margin: 0; }
   .info-curso .precio {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between; }
     .info-curso .precio .regular {
       color: red;
@@ -228,37 +185,20 @@ footer {
   margin-top: 1rem;
   padding-top: 2rem; }
   footer .contenedor-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column; }
     @media only screen and (min-width: 480px) {
       footer .contenedor-footer {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
         flex-direction: row; } }
 
 /* Menu */
 .menu, .navegacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 1.5rem; }
   @media only screen and (min-width: 768px) {
     .menu, .navegacion {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc( 30% - 1rem);
       flex: 0 1 calc( 30% - 1rem); } }
   .menu a, .navegacion a {
     color: black;
